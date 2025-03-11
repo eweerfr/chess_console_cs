@@ -13,7 +13,7 @@ public class PosicaoXadrez
         this.coluna = coluna;
     }
 
-    public Posicao toPosicao()
+    public Posicao toPosicao()  //converte a posicao no xadrez pra posicao na matriz eg: c1 para 2,0
     {
         return new Posicao(8 - linha, coluna - 'a');
     }

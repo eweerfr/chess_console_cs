@@ -2,5 +2,5 @@ namespace tabuleiro;
 
 public enum Cor
 {
-    branca, preta, 
+    Branca, Preta, 
 }

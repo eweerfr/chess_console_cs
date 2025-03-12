@@ -30,6 +30,7 @@ class Program
                     Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
 
                     Console.WriteLine();
+                    Console.WriteLine($"Peça selecionada: {partida.tab.peca(origem).GetType().Name}");
                     Console.Write("Destino: ");
                     Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
 
@@ -41,6 +42,8 @@ class Program
                     Console.ReadLine();
                 }
             }
+            Console.Clear();
+            Tela.imprimirPartida(partida);
             
         }
         catch (TabuleiroException e)
